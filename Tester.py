@@ -40,7 +40,7 @@ def identify_color(r, g, b):
         'green': (0, 255, 0),
         'blue': (0, 0, 255),
         'yellow': (255, 255, 0),
-        'yellow': (240, 240, 50),
+        'yellow': (240, 240, 70),
         'cyan': (0, 255, 255),
         # Add more color names and RGB values as needed
     }

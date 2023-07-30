@@ -18,9 +18,9 @@ def color_to_df(input):
     colors_pre_list = str(input).replace('([(','').split(', (')[0:-1]
     df_rgb = [i.split('), ')[0] + ')' for i in colors_pre_list]
     df_percent = [i.split('), ')[1].replace(')','') for i in colors_pre_list]
-    
     #convert RGB to HEX code
     df = [df_rgb, df_percent]
+    print(df)
     return df
 
 def identify_color(r, g, b):
@@ -35,7 +35,7 @@ def identify_color(r, g, b):
         'green': (0, 255, 0),
         'blue': (0, 0, 255),
         'yellow': (255, 255, 0),
-        'yellow': (240, 240, 50),
+        'yellow': (240, 240, 70),
         'cyan': (0, 255, 255),
         # Add more color names and RGB values as needed
     }
@@ -44,13 +44,13 @@ def identify_color(r, g, b):
     closest_distance = float('inf')
     for name, values in color_names.items():
         distance = sum([(v - c) ** 2 for v, c in zip(values, (r, g, b))])
-        print(name, distance)
+        #print(name, distance)
         if distance < closest_distance:
             closest_distance = distance
             closest_color = name
     return closest_color
 
-CardPath = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCards/card_22.jpg'
+CardPath = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/card_1.jpg'
 card = cv2.imread(CardPath)
 colors_x = extcolors.extract_from_path(CardPath, tolerance = 30, limit = 9)
 Color_D = color_to_df(colors_x)
