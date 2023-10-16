@@ -115,8 +115,9 @@ for image in Cards:
             new_filename = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBoldSplit/'+Clocation[len(Clocation) - 1]
             image.save(new_filename)
             #BoldSplit = BoldSplit + 1
-        else:
-            print("abnormal", CardPath)
+        #else:
+            #print("abnormal", CardPath)
+            
 
 
 

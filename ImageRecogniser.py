@@ -86,4 +86,5 @@ for fil in notice:
                     #           if coord[i][0][1] + 1 < max_y:
                                 # point2 = True
                 except:
-                    print("")
+                    u = 0
+                    u = u + 1

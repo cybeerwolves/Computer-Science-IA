@@ -9,7 +9,6 @@ PDFcounter = 0
 path = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/Slides/'
 files = os.listdir(path)
 for file in files:
-    print("running")
     if file.endswith(".pdf"):
         input_path = os.path.join(path, f'{files[PDFcounter]}')
 
@@ -43,7 +42,6 @@ for file in files:
                 output_filename = os.path.join(output_path, f'page{page_num+1}.jpg')
                 pil_image.save(output_filename, 'JPEG')
     PDFcounter = PDFcounter + 1
-print("finnished")
             
 
 

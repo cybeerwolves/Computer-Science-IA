@@ -61,7 +61,6 @@ for itg in noted:
 
 # Perform OCR using pytesseract
     redtext = pytesseract.image_to_string(gray)
-    print("Redtext: ", redtext)
 
     lower_Green = np.array([40, 135, 40])
     upper_Green = np.array([200, 255, 200])

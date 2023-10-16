@@ -97,3 +97,32 @@ Basic (type in the answer)	Name of deck	 by the public sector occurs <br>when a 
 Basic (type in the answer)	Name of deck	 is the total quantity of goods and services that all buyers in an <br>economy want to purchase over a particular time period, at different prices, ceteris paribus.	Aggregate demand
 Basic (type in the answer)	Name of deck	 is a method used by the party that has <br>more information to convince the buyers thatt<br>he , product being sold is of good quality. G	Signalling
 Basic (type in the answer)	Name of deck	In the , prices of resources (especially wages) are fixed.	short run
+Basic (type in the answer)	Name of deck	 is when income increases, <br>the fraction of income paid as taxes decreases.	Regressive taxation
+Basic (type in the answer)	Name of deck	 <br>shows the combination of maximum ou<br>tput that can be produced by an economy with fixed resources and technology p<br>rovided there is	Production Possibilities Curve (PPC)
+Basic (type in the answer)	Name of deck	 is defined as a sustained decrease in <br>the general price level.	Deflation
+Basic (type in the answer)	Name of deck	 is defined as a sustained increase in <br>the general price level.	Inflation
+Basic (type in the answer)	Name of deck	 is the level of debt where <br>the borrowing government has en<br>ough revenues to meet its debt obligations.	Sustainable debt
+Basic (type in the answer)	Name of deck	 refers the amount of money thata <br>government owes to lenders outside of the government itself.	Government debt
+Basic (type in the answer)	Name of deck	 occur when the actions of <br>consumers or producers give rise to nega<br>tive or positive spillover effects on third parties.	Externalities
+Basic (type in the answer)	Name of deck	 refers to the failure of the market to allocate resources efficiently.	Market failure
+Basic (type in the answer)	Name of deck	 is when income increases, <br>the fraction of income paid as taxes increase.	Progressive taxation
+Basic (type in the answer)	Name of deck	 refer to <br>the cost to producers of producing one <br>more unit of a good.	Marginal private cost (MPC)
+Basic (type in the answer)	Name of deck	 refer to <br>benefits to consumers from consuming<br> one more unit of a good or service.	Marginal private benefit (MPB)
+Basic (type in the answer)	Name of deck	 refer to <br>costs to society from consuming<br> one more unit of a good.	Marginal social cost (MSC)
+Basic (type in the answer)	Name of deck	 refer <br>to benefits to society from consu<br>ming one more unit of a good.	Marginal social benefit (MSB)
+Basic (type in the answer)	Name of deck	 are rivalrous and excludable.	Private goods
+Basic (type in the answer)	Name of deck	 have the two characteristics:	Public goods
+Basic (type in the answer)	Name of deck	 shows the relationship between the total amount of real <br>output demanded by the four components and the economy’s price level over'a time period.	Aggregate demand curve
+Basic (type in the answer)	Name of deck	 is when income increases, <br>the fraction of income paid as taxes remains constant.	Proportional taxation
+Basic (type in the answer)	Name of deck	A  means that AD decreases for any <br>price level = i.e. fewer output is demanded	leftward shift
+Basic (type in the answer)	Name of deck	A  means that AD increases for any <br>price level - i.e. more output is demanded	rightward shift
+Basic (type in the answer)	Name of deck	 shows the relationship between the price level and <br>the quantity of real output produced by firms when reso<br>urce prices (especially wages) do not change, ceteris paribus.	SRAS
+Basic (type in the answer)	Name of deck	 is the total quantity of goods and services produced in an economy <br>over a particular time period at different price levels.	Aggregate supply
+Basic (type in the answer)	Name of deck	A  means that SRAS decreases for any <br>price level = i.e. lower quantity of real GDP.	leftward shift
+Basic (type in the answer)	Name of deck	A  means that SRAS increases for <br>any price level - i.e. larger quantity of real GDP.	rightward shift
+Basic (type in the answer)	Name of deck	 is vertical at the full employment level of <br>output, indicating that in the long run the economy prod<br>uces potential GDP, which is independent of the'price level.	LRAS curve
+Basic (type in the answer)	Name of deck	LR, AS shows the total uantiy of goods and services produced in the flexible resource price <br>period, a different price ave	LRAS
+Basic (type in the answer)	Name of deck	 is tax paid divided by total <br>income, expressed as a percentage.	Average tax rate
+Basic (type in the answer)	Name of deck	 is defined as the tax rate paid <br>on additional income, expressed as a percentage.	Marginal tax rate
+Basic (type in the answer)	Name of deck	 is the interest rate that <br>has been corrected for inflation.	Real interest rate
+Basic (type in the answer)	Name of deck	The  is the market <br>rate that prevails at any moment in time.	nominal rate of interest
