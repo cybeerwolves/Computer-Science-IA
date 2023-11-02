@@ -4,21 +4,18 @@ import cv2
 import numpy as np
 import os
 
-# set the path to the Tesseract executable file (if necessary)
-pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
-
 # Load the image
-path = "C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered"
+path = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered"
 noted = os.listdir(path)
 Slocation = []
 Reds = []
 card = []
 for itg in noted:
     Slocation = itg.split('/')
-    img = cv2.imread('C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-    img2 = cv2.imread('C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-    img3 = cv2.imread('C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-    img4 = cv2.imread('C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+    img = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+    img2 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+    img3 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+    img4 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
     # SUccessful black filter
     #lower_yellow = (0, 130, 130)
     #upper_yellow = (120, 255, 255)
@@ -126,7 +123,7 @@ for itg in noted:
 for f in range(len(card)):
     Output = Output + card[f]
 print(Output)
-file_name = "C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output.txt"
+file_name = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output.txt"
 with open(file_name, "w") as file:
     # Write the content to the file
     file.write(Output)

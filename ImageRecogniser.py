@@ -11,10 +11,9 @@ def zoom(img, zoom_factor=0.66):
     return cv2.resize(img, None, fx=zoom_factor, fy=zoom_factor)
 
 PDFcounter = 0
-paths = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlidesImage/'
+paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlidesImage/'
 notice = os.listdir(paths)
 for fil in notice:
-    print("running")
     if fil.endswith(".pdf"):
         path = os.path.join(paths, f'{notice[PDFcounter]}')
         PDFcounter = PDFcounter + 1
@@ -64,13 +63,13 @@ for fil in notice:
                         #need a loop to find max and min
                         counter = counter + 1
                         crop_img = image[min_y:max_y, min_x:max_x]
-                        cv2.imshow("cropped", crop_img)
-                        output_path = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCards/'
+                        output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCards/'
                         if not os.path.exists(output_path):
                             os.makedirs(output_path)
                         new_filename = os.path.join(output_path, f'card_{counter}.jpg')
                         cv2.imwrite(new_filename, crop_img)
                         break
+                    
 
 
                         #crop_img = image[289:432, 30:935] #y, x format

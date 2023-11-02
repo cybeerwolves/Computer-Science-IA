@@ -46,9 +46,9 @@ cage = 0
 counter = 0
 
 
-pathsss = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/Samples/'
+pathsss = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Computer-Science-IA/Samples/'
 
-Card_paths = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
+Card_paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Computer-Science-IA/NeedSplit/'
 Cards = os.listdir(Card_paths)
 for img in Cards:
     if img.endswith(".jpg"):
@@ -105,7 +105,7 @@ for img in Cards:
                     if Contain == False:
                         Colors.append(Color)
                 if len(Colors) == 3 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
-                    output_path = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
+                    output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
                     image = Image.open(filename)
                     counter = counter + 1
                     if not os.path.exists(output_path):
@@ -115,7 +115,7 @@ for img in Cards:
                     image.save(new_filename)
                     # Check if all pixels within the rectangle are yellow
                 elif len(Colors) == 4 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0 and Colors.count('green') > 0:
-                    output_path = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
+                    output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
                     image = Image.open(filename)
                     counter = counter + 1
                     if not os.path.exists(output_path):

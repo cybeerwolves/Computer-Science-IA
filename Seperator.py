@@ -6,14 +6,14 @@ import io
 
 PDFcounter = 0
 # Set the input and output paths
-path = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/Slides/'
+path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Slides/'
 files = os.listdir(path)
 for file in files:
     if file.endswith(".pdf"):
         input_path = os.path.join(path, f'{files[PDFcounter]}')
 
         location = input_path.split('/')
-        output_path = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlidesImage/'+location[len(location) - 1]
+        output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlidesImage/'+location[len(location) - 1]
 
         # Create the output folder if it doesn't exist
         if not os.path.exists(output_path):

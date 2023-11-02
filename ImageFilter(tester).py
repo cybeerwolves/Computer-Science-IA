@@ -50,7 +50,7 @@ def identify_color(r, g, b):
             closest_color = name
     return closest_color
 
-CardPath = 'C:/Users/5amue1/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/card_1.jpg'
+CardPath = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/card_1.jpg'
 card = cv2.imread(CardPath)
 colors_x = extcolors.extract_from_path(CardPath, tolerance = 30, limit = 9)
 Color_D = color_to_df(colors_x)
