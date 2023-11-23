@@ -3,7 +3,9 @@ from PIL import Image
 import cv2
 import numpy as np
 import os
+import datetime
 
+Name = "Deck Name"
 # Load the image
 path = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered"
 noted = os.listdir(path)
@@ -31,14 +33,14 @@ for itg in noted:
     yellowFilter(img2)
     yellowFilter(img3)
     yellowFilter(img4)
-    Output = "#separator:tab\n#html:true\n#notetype column:1\n#deck column:2\n"
+    Output = "#separator:tab\n#html:true\n#deck column:1\n#tags column:4\n"
 
-    lower_black = np.array([0, 160, 0])
-    upper_black = np.array([80, 255, 80])
-    hv = cv2.cvtColor(img2, cv2.COLOR_BGR2HSV)
-    mas = cv2.inRange(hv, lower_black, upper_black)
-    img2[mas == 0] = (255, 255, 255)
-    Blacktext = pytesseract.image_to_string(img2)
+    #lower_black = np.array([0, 160, 0])
+    #upper_black = np.arr ay([80, 255, 80])
+    #hv = cv2.cvtColor(img2, cv2.COLOR_BGR2HSV)
+    #mas = cv2.inRange(hv, lower_black, upper_black)
+    #img2[mas == 0] = (255, 255, 255)
+    #Blacktext = pytesseract.image_to_string(img2)
     #print("blackText: ", Blacktext)
 
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -74,6 +76,9 @@ for itg in noted:
     img4[AllMask == 0] = (255, 255, 255)
     Alltext = pytesseract.image_to_string(img4)
     line = []
+
+
+    
     k = Alltext.split('\n')
     number = []
     for l in range(0, len(k)):
@@ -103,7 +108,7 @@ for itg in noted:
             if Alltext[y:y+len(Greentext)] == Greentext:
                 Alltext = Alltext[:y]+"<b>"+Alltext[y:y+ len(Greentext)]+"</b>"+Alltext[y+ len(Greentext):]
                 break
-    #print("AllText: ", Alltext)
+
     redtext = redtext[:len(redtext) - 1]
     for g in range(len(Alltext)):
         if Alltext[g:g+len(redtext)] == redtext:
@@ -114,18 +119,25 @@ for itg in noted:
     Detected = False
     
     for o in range(len(Reds)):
-        if Alltext == Reds[o]:
+        if redtext == Reds[o]:
             Detected = True
     if Detected == False:
-        Reds.append(Alltext)
-        card.append("Basic (type in the answer)\t"+"Name of deck\t"+Alltext+"\t"+redtext+"\n")
+        Reds.append(redtext)
+        card.append(Name+"\t"+redtext+"\t"+Alltext+"\n")
 
 for f in range(len(card)):
     Output = Output + card[f]
 print(Output)
-file_name = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output.txt"
+now = datetime.datetime.now() # gets the time in string format
+time = now.strftime("%Y%m%H%M")
+#print(time)
+file_name = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output/"+time+".txt"
+folder_name = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output/'
+if not os.path.exists(folder_name):
+    os.makedirs(folder_name)
 with open(file_name, "w") as file:
     # Write the content to the file
+    print(Output)
     file.write(Output)
 print("finnished")
 

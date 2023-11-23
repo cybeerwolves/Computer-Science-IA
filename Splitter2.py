@@ -48,7 +48,7 @@ counter = 0
 
 pathsss = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Computer-Science-IA/Samples/'
 
-Card_paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Computer-Science-IA/NeedSplit/'
+Card_paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
 Cards = os.listdir(Card_paths)
 for img in Cards:
     if img.endswith(".jpg"):

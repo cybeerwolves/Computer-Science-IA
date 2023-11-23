@@ -15,20 +15,9 @@ ImagetoCards = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Com
 CardsFilter = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/CardFilter.py'
 CardSplitter = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Splitter2.py'
 Textoutput = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Test.py'
+
+Program_order = [SlidestoImages, ImagetoCards, CardsFilter, CardSplitter, Textoutput]
 print("Started")
 
-execute_python_program(SlidestoImages)
-print("SlidestoImage running")
-Run = True
-
-execute_python_program(ImagetoCards)
-print("ImagetoCards running")
-
-execute_python_program(CardsFilter)
-print("CardsFilter")
-
-execute_python_program(CardSplitter)
-print("CardSplitter")
-
-execute_python_program(Textoutput)
-print("Textoutput finnished")
+for i in range(0, len(Program_order)):
+    execute_python_program(Program_order[i])

@@ -1,0 +1,10 @@
+#separator:tab
+#html:true
+diff of sin	cos
+diff of cos	-sin
+diff of tan	sec2
+diff of sec	sec * tan
+diff of cosec	-cosec * cot
+diff of cot	-cosec2
+Sin2	= 1/2 -1/2cos(2x)
+cos2	1/2 + 1/2cos(2x)

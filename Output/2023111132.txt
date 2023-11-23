@@ -1,0 +1,129 @@
+#separator:tab
+#html:true
+#notetype column:1
+#deck column:2
+Basic (type in the answer)	Name of deck	Asymmeifiric information refers to <br>situations where buyers and sellers do<br> not have equal access to information.	Asymmetric information
+Basic (type in the answer)	Name of deck	 refers to situations where <br>one party in a transaction has more informa<br>tion about the quality of the product being sold than the other party.<br>	Adverse selection
+Basic (type in the answer)	Name of deck	 is a prolonged period of <br>slow economic growth usu<br>ally accompanied by high unemployment.	Stagnation
+Basic (type in the answer)	Name of deck	Changes in aggregate supply do not lead <br>to .	recessionary or inflationary gaps
+Basic (type in the answer)	Name of deck	DP remains constant at the level of potential <br>output (Ye) and the 	LRAS curve
+Basic (type in the answer)	Name of deck	 is a state of limited competition, <br>in which a market is shared by a	Oligopolies
+Basic (type in the answer)	Name of deck	Spare capacity refers to physical capital <br>(machines, equipment, etc) that firms <br>have available but do not use.	Spore capacity
+Basic (type in the answer)	Name of deck	A  is a 20% of a <br>country’s population.	quintile
+Basic (type in the answer)	Name of deck	A  is 10% portions of the country’s population.	decile
+Basic (type in the answer)	Name of deck	 refers to situations where one <br>party takes risks, but does not face the full c<br>osts of these risks because the full costs are borne	Moral hazard
+Basic (type in the answer)	Name of deck	The  shows the degree of income inequality in an economy.	Lorenz Curve
+Basic (type in the answer)	Name of deck	The Gini Coeficient is a summary measure of <br>the information contained in the Lorenz C<br>urve of an economy.	Gini Coeficient
+Lorenz Curve
+Basic (type in the answer)	Name of deck	 refers to an inability to satisfy minimal <br>consumption needs.	Poverty
+Basic (type in the answer)	Name of deck	 is a concept that compares <br>the income of individuals or households <br>in a society with median incomes.	Relative poverty
+Basic (type in the answer)	Name of deck	 refer to a method to measure poverty which consists <br>of what people in a population believe are the essentials for a minimum acceptable stan<br>dard of living that allows people to participate in society.	Minimum income standards (MIS)
+Basic (type in the answer)	Name of deck	Transfer payments are payments made by the governments to individuals specifically for <br>the purpose of redistributing income away from certain groups and towards other groups.	Transfer paymenis
+Basic (type in the answer)	Name of deck	 are taxes paid directly to the <br>government tax authorities by the taxpayer.	Direct faxes
+Basic (type in the answer)	Name of deck	Indirect taxes are taxes on spending on <br>goods and services.	Indirect faxes
+Basic (type in the answer)	Name of deck	Monetary policy involves management of <br>money supply and interest rate to ach<br>ieve macroeconomic objectives.	Moneiary policy
+Basic (type in the answer)	Name of deck	 is the cost of borrowing or reward for saving.	Interest rate
+Basic (type in the answer)	Name of deck	 means that <br>everyone in society receive<br> the same amount of income.	Income inequality
+Basic (type in the answer)	Name of deck	 focus on the productiot	Supply-side policies
+Basic (type in the answer)	Name of deck	 focus on the production <br>and supply-side of the economy. It focuses on	Supply-side policies
+Basic (type in the answer)	Name of deck	 involves a transfer of ownership of <br>a firm from the public to the private sector.	Privatisation
+Basic (type in the answer)	Name of deck	 involves the elimination <br>or reduction of government regulatio<br>n of private sector activities.	Deregulation
+Basic (type in the answer)	Name of deck	 refers to the exchange of <br>goods and services between nat<br>ions without protectionism by the government.	Free trade
+Basic (type in the answer)	Name of deck	The  is a price floor in the labour market	minimum wage
+Basic (type in the answer)	Name of deck	Labour unions are organisations of workers <br>in particular industries that negotiate <br>with employers for better worker benefits such as	Lobour unions
+Basic (type in the answer)	Name of deck	 are the money payments individuals received during the period <br>of time when they are out of work and seeking a new job.	Unemployment benefits
+Basic (type in the answer)	Name of deck	Industrial policies are goverr <br>industrial sector of an economy.	industrial policies
+Basic (type in the answer)	Name of deck	 is an increase <br>in real GDP over a period of <br>time and is usually expressed as a percentage change in<br>...	Economic growth
+Basic (type in the answer)	Name of deck	A  is one without any government control or intervention.	free market
+Basic (type in the answer)	Name of deck	 refers to an increase in <br>real GDP over a period of time.	Economic growth
+Basic (type in the answer)	Name of deck	 refer to levels of income, <br>wealth and consumption of goods and services.	Living standards
+Basic (type in the answer)	Name of deck	 focus on changing <br>aggregate demand to achieve the goals of p<br>rice stability, full employment and economic growth.	Demand-side policies
+Basic (type in the answer)	Name of deck	 focus on the production <br>and supply-side of the economy.	Supply-side policies
+Basic (type in the answer)	Name of deck	Market failure refers to the failure of the <br>market to achieve allocative efficiency.	Marke? failure
+Basic (type in the answer)	Name of deck	 refer to manipulation by the <br>government of its own expenditure and taxe<br>s to influence the level of aggregate demand.	Fiscal policy
+Basic (type in the answer)	Name of deck	Automatic stabilisers are factors that <br>automatically work toward stabilizing<br> the economy by reducing the short-term fluctuations of the business<br> cycle.	Automaiic stabilisers
+Basic (type in the answer)	Name of deck	 refer to the setting of minimum or maximum prices by the government <br>(or firms) so that prices are unable to adjust their equilibrium level.	Price controls
+Basic (type in the answer)	Name of deck	Fiscal policy is weakened by partial or <br>complete .	crowding out
+Basic (type in the answer)	Name of deck	 <br>is the fraction of additional income <br>that households spend on consumption of domestically produced good<br>s and services.	Marginal propensity to consume (MPC)
+Basic (type in the answer)	Name of deck	 occurs when inflation	Disinflation
+Basic (type in the answer)	Name of deck	A  is a legal maximum price <br>that the government sets for a partic<br>ular product. This is done when the government believes the prices are too hi<br>gh.	price ceiling
+Basic (type in the answer)	Name of deck	 is a measure of the cost of living for the typical household, <br>and compares the value of a basket of goods and services in one year with the value of<br> the same basket in a base year.	Consumer Price Index (CPI)
+Basic (type in the answer)	Name of deck	A  isa price index that <br>‘weights’ the various goods and services accor<br>ding to their relative importance in consumer spending.	weighted price index
+Basic (type in the answer)	Name of deck	A  isa price index that <br>‘weighs’ the various goods and services accor<br>ding to their relative importance in consumer spending.	weighted price index
+Basic (type in the answer)	Name of deck	 involves an excess <br>of aggregate demand over aggregate su<br>pply at the full employment level of output, and is caused by an increase in aggre<br>gate demand.	Demand-pull inflation
+Basic (type in the answer)	Name of deck	Cost-push inflation is caused by a fall in <br>aggregate supply, in turn resulting <br>from increases in wages or costs of inputs.	Cosi-push inflation
+Basic (type in the answer)	Name of deck	 is the quantity of <br>products that can be bought with money.	Purchasing power
+Basic (type in the answer)	Name of deck	Price ieee is a veto ¢ of of rationing that allocates the limited quantities of goods and	Price rationing
+Basic (type in the answer)	Name of deck	 occurs when the price level <br>increases by more than 50% per month.	Hyperinflation
+Basic (type in the answer)	Name of deck	The  is concerned with the relationship <br>between unemployment and inflation.	Philips curve
+Basic (type in the answer)	Name of deck	Government debi refers the amount of money that a <br>government owes to lenders outside of the government itself.	Government debit
+Basic (type in the answer)	Name of deck	 refers to people of working <br>age who are actively looking for a job but<br> who are not employed.	Unemployment
+Basic (type in the answer)	Name of deck	 refers to people of <br>working age who have part-time jobs but...	Underemployment
+Basic (type in the answer)	Name of deck	 is defined as the number of people who are employed plus the number of <br>people of working age who are unemployec	Labour force
+Basic (type in the answer)	Name of deck	3.  involve buying/selling transactions that are <br>unrecorded and are usually illegal.	Underground (or parallel) markets
+Basic (type in the answer)	Name of deck	 occurs as a result of...	Structural unemployment
+Basic (type in the answer)	Name of deck	Frictional parallel. hl occurs when	Frictional unemployment
+Basic (type in the answer)	Name of deck	 occurs whan	Seasonal unemployment
+Basic (type in the answer)	Name of deck	 occurs during <br>the downturns of the business cycle, when<br> the economy is ina <b>recessionary gap</b>.	Cyclical unemployment
+Basic (type in the answer)	Name of deck	 is the difference between <br>the total amount that consumers are willing<br> and able to pay for a good and the total amount that they actually do pay (i.e. the m<br>arket price).	Consumer surplus
+Basic (type in the answer)	Name of deck	 is the difference between <br>what producers are willing and able to supp<br>ly a good for and the price they actually receive.	Producer surplus
+Basic (type in the answer)	Name of deck	. represents the benefits that are lost <br>to society because of resource misallocation.	Welfare loss
+Basic (type in the answer)	Name of deck	 consist of a maximum legal rent on housing, which is below the <br>market-determined level of rent.	Rent control
+Basic (type in the answer)	Name of deck	A  is a legal minimum price that <br>the government sets for a_ partic<br>ular product. This is done when the government believes the prices are too low.<br>	price floor
+Basic (type in the answer)	Name of deck	A is a legal f labour that an employer must pay. <br>IA V6	minimum wage
+Basic (type in the answer)	Name of deck	An  is imposed by the government on producers for the sale of products <br>which is then (partly) passed on to the consumers in the form of a higher price.	indirect tax
+Basic (type in the answer)	Name of deck	 is a fixed amount of tax per unit of the good or service sold.	Specific taxes
+Basic (type in the answer)	Name of deck	 is a fixed percer	Ad Valorem tax
+Basic (type in the answer)	Name of deck	 is a fixed percentage of t	Specific taxes
+Basic (type in the answer)	Name of deck	 are individuals or groups of <br>individuals who have an interest in somet<br>hing and are affected by it.	Stakeholders
+Basic (type in the answer)	Name of deck	The market outcomes due to indirect <br>ad valorem tax is the same as specific tax	indirect
+ad valorem jax specific tax
+Basic (type in the answer)	Name of deck	A  refers to assistance by the government to individuals or groups of individuals <br>such as firms, consumers, industries or sectors of an economy.	subsidy
+Basic (type in the answer)	Name of deck	Market failure refers to the failure of the market to allocate resources efficiently.	Marke? failure
+Basic (type in the answer)	Name of deck	 are not owned by <br>anyone, do not have a price and are available<br> for anyone to use without payment or restrictions.	Common pool resources
+Basic (type in the answer)	Name of deck	Common pool resources are not owned by <br>anyone, do not have a price and are available<br> for anyone to use without payment or restrictions.	Common pooi resources
+Basic (type in the answer)	Name of deck	 refers to situations where one <br>party in a transaction has more information about<br> the quality of the product being sold than the other party.	Adverse selection
+Basic (type in the answer)	Name of deck	The  is an <br>economic problem in which every indivi<br>dual has an incentive to consume a resource at the expense of every o<br>ther individual with no way to exclude anyone from consuming.<br>	tragedy of the commons
+Basic (type in the answer)	Name of deck	 refers to the ability of something to be preserved and maintained over time.	Sustainability
+Basic (type in the answer)	Name of deck	 are non-renewable resources as they take millions of years to form and <br>accelerating overuse is leading to their rapid depletion.	Fossil fuels
+Basic (type in the answer)	Name of deck	 can be used where a per-unit tax <br>on a good is imposed to reduce the supply.	Taxation
+Basic (type in the answer)	Name of deck	The  is a tax per unit of carbon <br>emissions of fossil fuels.	carbon tax
+Basic (type in the answer)	Name of deck	Tradeable permits are a policy involving <br>permits to pollute issued to firms <br>by a government or an international body.	Tradeable permis
+Basic (type in the answer)	Name of deck	 refers to a solution to the use of common pool resources <br>where the users take control of the resources and use them in a sustainable way.	Collective self-governance
+Basic (type in the answer)	Name of deck	 are products where MSB < MPB upon consumption.	Demerit goods
+Basic (type in the answer)	Name of deck		Merit goods
+Basic (type in the answer)	Name of deck	 is a method used by the party with the <br>limited information - i.e. the buyer.	Screening
+Basic (type in the answer)	Name of deck	 occurs when people can enjoy the use of a good without paying for it.	Free rider problem
+Basic (type in the answer)	Name of deck	Contracting out by the public sector occurs <br>when a government makes an agree<br>ment with a private firm to carry out an activity that the government was previously doi<br>ng itself.	Contraciing out
+Basic (type in the answer)	Name of deck	 is the total quantity of goods and services that all buyers in an <br>economy want to purchase over a particular time period, at different prices, ceteris paribus.	Aggregate demand
+Basic (type in the answer)	Name of deck	 is a method used by the party that has <br>more information to convince the buyers that<br> the product being sold is of good quality. G	Signalling
+Basic (type in the answer)	Name of deck	In the , prices of resources (especially wages) are fixed.	short run
+Basic (type in the answer)	Name of deck	 is when income increases, <br>the fraction of income paid as taxes decreases.	Regressive taxation
+Basic (type in the answer)	Name of deck	 <br>shows the combination of maximum ou<br>tput that can be produced by an economy with fixed resources and technology p<br>rovided there is	Production Possibilities Curve (PPC)
+Basic (type in the answer)	Name of deck	 is defined as.a sustained decrease in <br>the general price level.	Deflation
+Basic (type in the answer)	Name of deck	 is defined as a sustained increase in <br>the general price level.	Inflation
+Basic (type in the answer)	Name of deck	 is the level of debt where <br>the borrowing government has en<br>ough revenues to meet its debt obligations.	Sustainable debt
+Basic (type in the answer)	Name of deck	 refers the amount of money that'a <br>government owes. to lenders outside of the government itself.	Government debt
+Basic (type in the answer)	Name of deck	 occur when the actions of <br>consumers or producers give rise to nega<br>tive or positive spillover effects on third parties.	Externalities
+Basic (type in the answer)	Name of deck	 refers to the failure of the market to allocate resources efficiently.	Market failure
+Basic (type in the answer)	Name of deck	 is when income increases, <br>the fraction of income paid as taxes increase.	Progressive taxation
+Basic (type in the answer)	Name of deck	 refer to <br>the cost to producers of producing one <br>more unit of a good.	Marginal private cost (MPC)
+Basic (type in the answer)	Name of deck	 refer to <br>benefits to consumers from consuming<br> one more unit of a good or service.	Marginal private benefit (MPB)
+Basic (type in the answer)	Name of deck	 refer to <br>costs to society from consuming<br> one more unit of a good.	Marginal social cost (MSC)
+Basic (type in the answer)	Name of deck	 refer <br>to benefits to society from consu<br>ming one more unit of a good.	Marginal social benefit (MSB)
+Basic (type in the answer)	Name of deck	 are rivalrous and excludable.	Private goods
+Basic (type in the answer)	Name of deck	 have the two characteristics:	Public goods
+Basic (type in the answer)	Name of deck	 shows the relationship between the total amount of real <br>output demanded by the four components and the economy’s price level over'a time period.	Aggregate demand curve
+Basic (type in the answer)	Name of deck	 is when income increases, <br>the fraction of income paid as taxes remains constant.	Proportional taxation
+Basic (type in the answer)	Name of deck	A  means that AD decreases for any <br>price level = i.e. fewer output is demanded	leftward shift
+Basic (type in the answer)	Name of deck	A  means that AD increases for any <br>price level - i.e. more output is demanded	rightward shift
+Basic (type in the answer)	Name of deck	 shows the relationship between the price level and <br>the quantity of real output produced by firms when reso<br>urce prices (especially wages) do not change, ceteris paribus.	SRAS
+Basic (type in the answer)	Name of deck	overs particular tne period at efferent price levels.	Aggregate supply
+Basic (type in the answer)	Name of deck	A  means that SRAS decreases for any <br>price level = i.e. lower quantity of real GDP.	leftward shift
+Basic (type in the answer)	Name of deck	A  means that SRAS increases for <br>any price level - i.e. larger quantity of real GDP.	rightward shift
+Basic (type in the answer)	Name of deck	 is vertical at the full employment level of <br>output, indicating that in the long run the economy prod<br>uces potential GDP, which is independent of the’price level.	LRAS curve
+Basic (type in the answer)	Name of deck	 shows the total quantity of goods and services produced in the flexible resource price <br>period, a diferent price ave s, ceteris paribus.	LRAS
+Basic (type in the answer)	Name of deck	 is tax paid divided by total <br>income, expressed as a percentage.	Average tax rate
+Basic (type in the answer)	Name of deck	 is defined as the tax rate paid <br>on additional income, expressed as a percentage.	Marginal tax rate
+Basic (type in the answer)	Name of deck	 is the interest rate that <br>has been corrected for inflation.	Real interest rate
+Basic (type in the answer)	Name of deck	The  is the market <br>rate that prevails at any moment in time.	nominal rate of interest

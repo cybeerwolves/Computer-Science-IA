@@ -58,7 +58,7 @@ Card_paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Compu
 Cards = os.listdir(Card_paths)
 for image in Cards:
     Colors = []
-    if image.endswith(".jpg"):
+    if image.endswith(".jpg") or image.endswith(".jpeg"):
         CardCounter = CardCounter + 1
         CardPath = os.path.join(Card_paths, f'card_{CardCounter}.jpg')
         Clocation = CardPath.split('/')
@@ -99,20 +99,20 @@ for image in Cards:
             image.save(new_filename)
             #Newcounter = Newcounter + 1
         elif len(Colors) == 4 and Colors.count('green') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
-            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBold/'
+            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
             image = Image.open(CardPath)
             if not os.path.exists(output_path):
                 os.makedirs(output_path)
             #new_filename = os.path.join(output_path, f'Filteredcard_{Greencounter}.jpg')
-            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBold/'+Clocation[len(Clocation) - 1]
+            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Clocation[len(Clocation) - 1]
             image.save(new_filename)
         elif len(Colors) > 4 and Colors.count('green') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0 and Colors.count('white') > 0:
-            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBoldSplit/'
+            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
             image = Image.open(CardPath)
             if not os.path.exists(output_path):
                 os.makedirs(output_path)
             #new_filename = os.path.join(output_path, f'Filteredcard_{BoldSplit}.jpg')
-            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBoldSplit/'+Clocation[len(Clocation) - 1]
+            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'+Clocation[len(Clocation) - 1]
             image.save(new_filename)
             #BoldSplit = BoldSplit + 1
         #else:
