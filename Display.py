@@ -5,6 +5,15 @@ import os
 import easygui
 from tkinter import filedialog
 from tkinter import messagebox as mb
+import subprocess
+
+#Defining all the programs
+SlidestoImages = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Seperator.py'
+ImagetoCards = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/ImageRecogniser.py'
+CardsFilter = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/CardFilter.py'
+CardSplitter = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Splitter2.py'
+Textoutput = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Test.py'
+Program_order = [SlidestoImages, ImagetoCards, CardsFilter, CardSplitter, Textoutput]
 
 def open_window():
     read=easygui.fileopenbox(default="C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Slides/")
@@ -34,8 +43,17 @@ def copy_file(destination1, source1):
 def RunTheProgram():
     source = open_window()
     copy_file("C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Slides/", source)
-    
+    print("Started")
+    for i in range(0, len(Program_order)):
+        execute_python_program(Program_order[i])
 
+def execute_python_program(program_path):
+    try:
+        subprocess.run(['python', program_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while executing the program: {e}")
+    except FileNotFoundError:
+        print("The 'python' command was not found. Make sure Python is installed and added to the system's PATH.")
 
 class Page(tk.Frame):
     def __init__(self, parent, controller):
@@ -67,6 +85,8 @@ class MainPage(Page):
 
    #     button = tk.Button(self, text="Go back to Main Page", width=20, height=2, command=lambda: controller.show_page(MainPage))
     #    button.pack()
+
+
 
 class InputPage(Page):
     def __init__(self, parent, controller):
