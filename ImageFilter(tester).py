@@ -13,6 +13,7 @@ import extcolors
 from colormap import rgb2hex
 CardCounter = 0
 Colors = []
+
 def color_to_df(input):
     
     colors_pre_list = str(input).replace('([(','').split(', (')[0:-1]

@@ -18,6 +18,8 @@ Newcounter = 0
 Greencounter = 0
 BoldSplit = 0
 
+import time
+
 def color_to_df(input):
     
     colors_pre_list = str(input).replace('([(','').split(', (')[0:-1]
@@ -27,6 +29,9 @@ def color_to_df(input):
     #convert RGB to HEX code
     df = [df_rgb, df_percent]
     return df
+
+def prit():
+    print("HAHHHAHAHAHHAHAHA") #Just for testing purposes
 
 def identify_color(r, g, b):
     # Define a list of color names and their corresponding RGB values
@@ -42,7 +47,6 @@ def identify_color(r, g, b):
         'yellow': (255, 255, 0),
         'yellow': (240, 240, 70),
         'cyan': (0, 255, 255),
-        # Add more color names and RGB values as needed
     }
     # Find the color name with the closest RGB values to the provided values
     closest_color = None
@@ -54,76 +58,94 @@ def identify_color(r, g, b):
             closest_color = name
     return closest_color
 
-Card_paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCards/'
-Cards = os.listdir(Card_paths)
-for image in Cards:
-    Colors = []
-    if image.endswith(".jpg") or image.endswith(".jpeg"):
-        CardCounter = CardCounter + 1
-        CardPath = os.path.join(Card_paths, f'card_{CardCounter}.jpg')
-        Clocation = CardPath.split('/')
-        Card_output = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Cards/'+Clocation[len(Clocation) - 1]
-        card = cv2.imread(CardPath)
-        colors_x = extcolors.extract_from_path(CardPath, tolerance = 30, limit = 9)
-        Color_D = color_to_df(colors_x)
+def run():
+    #time.sleep(60)
+    output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+    new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
+    if not os.path.exists(new_filename):
+        os.makedirs(new_filename)
+    Card_paths = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCards/'
+    Cards = os.listdir(Card_paths)
+    NeedBold = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBold/'
+    if not os.path.exists(NeedBold):
+        os.makedirs(NeedBold)
+    NeedBoldSplit = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBoldSplit/'
+    if not os.path.exists(NeedBoldSplit):
+        os.makedirs(NeedBoldSplit)
+    
+    CardCounter = 0
+    for image in Cards:
+        Colors = []
+        if image.endswith(".jpg") or image.endswith(".jpeg"):
+            CardCounter = CardCounter + 1
+            CardPath = os.path.join(Card_paths, f'card_{CardCounter}.jpg')
+            Clocation = CardPath.split('/')
+            Card_output = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Cards/'+Clocation[len(Clocation) - 1]
+            card = cv2.imread(CardPath)
+            colors_x = extcolors.extract_from_path(CardPath, tolerance = 30, limit = 9)
+            Color_D = color_to_df(colors_x)
 
 
-        #Filter out the string
-        for i in range(0, len(Color_D[0])):
-            Contain = False
-            Color_D[0][i] = Color_D[0][i][1:len(Color_D[0][i]) - 1]
-            Color_D[0][i] = Color_D[0][i].split(", ")
-            Color_D[0][i] = [int(x) for x in Color_D[0][i]]
-            Color = identify_color(Color_D[0][i][0], Color_D[0][i][1], Color_D[0][i][2])
-            for u in range(0, len(Colors)):
-                if Color == Colors[u]:
-                    Contain = True
-            if Contain == False:
-                Colors.append(Color)
-        if len(Colors) == 3 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
-            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
-            image = Image.open(CardPath)
-            if not os.path.exists(output_path):
-                os.makedirs(output_path)
-            #new_filename = os.path.join(output_path, f'Filteredcard_{counter}.jpg')
-            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Clocation[len(Clocation) - 1]
-            image.save(new_filename)
-            #counter = counter + 1
-        elif len(Colors) == 4 and Colors.count('white') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
-            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
-            image = Image.open(CardPath)
-            if not os.path.exists(output_path):
-                os.makedirs(output_path)
-            #new_filename = os.path.join(output_path, f'Filteredcard_{Newcounter}.jpg')
-            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'+Clocation[len(Clocation) - 1]
-            image.save(new_filename)
-            #Newcounter = Newcounter + 1
-        elif len(Colors) == 4 and Colors.count('green') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
-            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
-            image = Image.open(CardPath)
-            if not os.path.exists(output_path):
-                os.makedirs(output_path)
-            #new_filename = os.path.join(output_path, f'Filteredcard_{Greencounter}.jpg')
-            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Clocation[len(Clocation) - 1]
-            image.save(new_filename)
-        elif len(Colors) > 4 and Colors.count('green') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0 and Colors.count('white') > 0:
-            output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
-            image = Image.open(CardPath)
-            if not os.path.exists(output_path):
-                os.makedirs(output_path)
-            #new_filename = os.path.join(output_path, f'Filteredcard_{BoldSplit}.jpg')
-            new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'+Clocation[len(Clocation) - 1]
-            image.save(new_filename)
-            #BoldSplit = BoldSplit + 1
-        #else:
-            #print("abnormal", CardPath)
-            
+            #Filter out the string
+            for i in range(0, len(Color_D[0])):
+                Contain = False
+                Color_D[0][i] = Color_D[0][i][1:len(Color_D[0][i]) - 1]
+                Color_D[0][i] = Color_D[0][i].split(", ")
+                Color_D[0][i] = [int(x) for x in Color_D[0][i]]
+                Color = identify_color(Color_D[0][i][0], Color_D[0][i][1], Color_D[0][i][2])
+                for u in range(0, len(Colors)):
+                    if Color == Colors[u]:
+                        Contain = True
+                if Contain == False:
+                    Colors.append(Color)
+            if len(Colors) == 3 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
+                output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'
+                image = Image.open(CardPath)
+                if not os.path.exists(output_path):
+                    os.makedirs(output_path)
+                #new_filename = os.path.join(output_path, f'Filteredcard_{counter}.jpg')
+                new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Clocation[len(Clocation) - 1]
+                image.save(new_filename)
+                #counter = counter + 1
+            elif len(Colors) == 4 and Colors.count('white') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
+                output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'
+                image = Image.open(CardPath)
+                if not os.path.exists(output_path):
+                    os.makedirs(output_path)
+                #new_filename = os.path.join(output_path, f'Filteredcard_{Newcounter}.jpg')
+                new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedSplit/'+Clocation[len(Clocation) - 1]
+                image.save(new_filename)
+                #Newcounter = Newcounter + 1
+            elif len(Colors) == 4 and Colors.count('green') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0:
+                output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBold/'
+                #Change this to NeedBold
+                image = Image.open(CardPath)
+                if not os.path.exists(output_path):
+                    os.makedirs(output_path)
+                #new_filename = os.path.join(output_path, f'Filteredcard_{Greencounter}.jpg')
+                new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBold/'+Clocation[len(Clocation) - 1]
+                image.save(new_filename)
+            elif len(Colors) > 4 and Colors.count('green') > 0 and Colors.count('yellow') > 0 and Colors.count('red') > 0 and Colors.count('black') > 0 and Colors.count('white') > 0:
+                output_path = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBoldSplit/'
+                image = Image.open(CardPath)
+                if not os.path.exists(output_path):
+                    os.makedirs(output_path)
+                #new_filename = os.path.join(output_path, f'Filteredcard_{BoldSplit}.jpg')
+                new_filename = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBoldSplit/'+Clocation[len(Clocation) - 1]
+                #Change this to BoldSplits
+                image.save(new_filename)
+                #BoldSplit = BoldSplit + 1
+            #else:
+                #print("abnormal", CardPath)
+run()               
+#Remember to put in the boldsplits in the future
 
 
+    #normal: 1, 8, 
+    #Bold text: 208, 209
+    #Abnormal: 41, 42, 45, 46, 69, 66, 178, 195, 124
+    #No text: 84, 87, 88, 105
 
-#normal: 1, 8, 
-#Bold text: 208, 209
-#Abnormal: 41, 42, 45, 46, 69, 66, 178, 195, 124
-#No text: 84, 87, 88, 105
-
-#Normal sequence of colors: ['#FFFF00', '#0C0900', '#EF0900', '#F5F734', '#EAED58']
+    #Normal sequence of colors: ['#FFFF00', '#0C0900', '#EF0900', '#F5F734', '#EAED58']

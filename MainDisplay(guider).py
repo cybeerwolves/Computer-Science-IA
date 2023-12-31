@@ -14,7 +14,7 @@ SlidestoImages = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/C
 ImagetoCards = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/ImageRecogniser.py'
 CardsFilter = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/CardFilter.py'
 CardSplitter = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Splitter2.py'
-Textoutput = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Test.py'
+Textoutput = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/CardRecogniser.py'
 
 Program_order = [SlidestoImages, ImagetoCards, CardsFilter, CardSplitter, Textoutput]
 print("Started")
