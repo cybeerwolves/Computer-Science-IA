@@ -4,10 +4,11 @@ import cv2
 import numpy as np
 import os
 import datetime
-import time
 import shutil
+import time
 
 def yellowFilter(img):
+    #Mask for yellow image, filter out all these pixels
     lower_yellow = np.array([0, 200, 250])
     upper_yellow = np.array([120, 255, 255])
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -15,73 +16,68 @@ def yellowFilter(img):
     img[mask > 0] = (255, 255, 255)
     
 def run():
-    time.sleep(120)
-    deck_name = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Variable/Deckname.txt"
+    time.sleep(70)
+    #Get the deck name
+    #Preset text for output
+    Output = "#separator:tab\n#html:false\n#deck column:1\n"
+    deck_name = "C:/Users/samue/OneDrive/Desktop/Ankify/Variable/Deckname.txt"
     with open(deck_name, 'r') as file:
-        Deck = str(file)
+        Deck = file.read()
+    Deck = str(Deck)
     # Load the image
-    Inputpath = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/"
-    Boldpath = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/NeedBold/"
+    Inputpath = "C:/Users/samue/OneDrive/Desktop/Ankify/SlideCardsFiltered/"
+    Boldpath = "C:/Users/samue/OneDrive/Desktop/Ankify/NeedBold/"
+    #Get items
     BoldFile = os.listdir(Boldpath)
     for item in BoldFile:
         Path = item.split('/')
+        #Copy into normal folder for easier processing
         shutil.copy(Boldpath+Path[len(Path) - 1], Inputpath)
     noted = os.listdir(Inputpath)
     Slocation = []
     Reds = []
     card = []
+    #Loop through all images
     for itg in noted:
         Slocation = itg.split('/')
-        img = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-        img2 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-        img3 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-        img4 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
-        # SUccessful black filter
-        #lower_yellow = (0, 130, 130)
-        #upper_yellow = (120, 255, 255)
+        #Find the image 
+        img = cv2.imread('C:/Users/samue/OneDrive/Desktop/Ankify/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+        img2 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Ankify/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+        img3 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Ankify/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
+        img4 = cv2.imread('C:/Users/samue/OneDrive/Desktop/Ankify/SlideCardsFiltered/'+Slocation[len(Slocation) - 1])
 
-        #normal filtering, would filter out yellow 
-
+        #Place yellow filter before text recognition
         yellowFilter(img)
         yellowFilter(img2)
         yellowFilter(img3)
         yellowFilter(img4)
-        Output = "#separator:tab\n#html:true\n#deck column:1\n#tags column:4\n"
-
-        #lower_black = np.array([0, 160, 0])
-        #upper_black = np.arr ay([80, 255, 80])
-        #hv = cv2.cvtColor(img2, cv2.COLOR_BGR2HSV)
-        #mas = cv2.inRange(hv, lower_black, upper_black)
-        #img2[mas == 0] = (255, 255, 255)
-        #Blacktext = pytesseract.image_to_string(img2)
-        #print("blackText: ", Blacktext)
 
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
         # Define the lower and upper bounds for red color in HSV
         lower_red = np.array([0, 50, 50])
         upper_red = np.array([10, 255, 255])
-
-        # Create a mask for red text
+        # Create a mask for red text and apply it
         mask = cv2.inRange(hsv, lower_red, upper_red)
-
-    # Apply the mask to the image
         red_text_image = cv2.bitwise_and(img, img, mask=mask)
-
     # Convert the red text image to grayscale
         gray = cv2.cvtColor(red_text_image, cv2.COLOR_BGR2GRAY)
-
     # Perform OCR using pytesseract
         redtext = pytesseract.image_to_string(gray)
 
+#Same thing with green text
+        
         lower_Green = np.array([40, 135, 40])
         upper_Green = np.array([200, 255, 200])
+        # Convert the green text image to grayscale
         hv = cv2.cvtColor(img3, cv2.COLOR_BGR2HSV)
         GreenMask = cv2.inRange(hv, lower_Green, upper_Green)
         img3[GreenMask == 0] = (255, 255, 255)
+        # Perform OCR using pytesseract
         Greentext = pytesseract.image_to_string(img3)
         #print("GreenText: ", Greentext)
 
+#Getting the same with all text
         lower_All = (0, 0, 0)
         upper_All = (255, 255, 255)
         height = cv2.cvtColor(img4, cv2.COLOR_BGR2HSV)
@@ -90,8 +86,6 @@ def run():
         Alltext = pytesseract.image_to_string(img4)
         line = []
 
-
-        
         k = Alltext.split('\n')
         number = []
         for l in range(0, len(k)):
@@ -112,9 +106,11 @@ def run():
         Alltext = ' '.join(k)
         if len(line) > 0:
             line.pop(len(line) - 1)
+        #Place it all in one line
         for u in range(len(line)):
-            Alltext = Alltext[:line[u]+1]+"<br>"+Alltext[line[u]+1:]
+            Alltext = Alltext[:line[u]+1]+Alltext[line[u]+1:]
 
+        #Add in the green formatting
         Greentext = Greentext[:len(Greentext) - 1]
         if len(Greentext) > 0:
             for y in range(len(Alltext) - len(Greentext)):
@@ -122,15 +118,15 @@ def run():
                     Alltext = Alltext[:y]+"<b>"+Alltext[y:y+ len(Greentext)]+"</b>"+Alltext[y+ len(Greentext):]
                     break
 
+        #Removes the red text form the all texrt
         redtext = redtext[:len(redtext) - 1]
         for g in range(len(Alltext)):
             if Alltext[g:g+len(redtext)] == redtext:
                 Alltext = Alltext[:g]+Alltext[g+ len(redtext):]
                 break
         
-        #Duplicates detector
+        #Duplicates detector, using red text
         Detected = False
-        
         for o in range(len(Reds)):
             if redtext == Reds[o]:
                 Detected = True
@@ -140,36 +136,27 @@ def run():
 
     for f in range(len(card)):
         Output = Output + card[f]
-    print(Output)
+
     now = datetime.datetime.now() # gets the time in string format
-    times = now.strftime("%Y%m%H%M")
+    #Set Unique file name
+    year = now.strftime("%Y")
+    month = now.strftime("%m")
+    day = now.strftime("%d" )
+    hour = now.strftime("%H")
+    min = now.strftime("%M")
+    second = now.strftime("%S")
+    times = year+month+day+hour+min+second
     #print(time)
-    file_name = "C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output/"+times+".txt"
-    folder_name = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/Output/'
+    file_name = "C:/Users/samue/OneDrive/Desktop/Ankify/Output/"+times+".txt"
+    folder_name = 'C:/Users/samue/OneDrive/Desktop/Ankify/Output/'
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
+    print(Output)
     with open(file_name, "w") as file:
         # Write the content to the file
-        print(Output)
+        
+        Output = str(Output)
         file.write(Output)
     print("finnished")
 
 run()
-
-        #Will need to find the location of the Redtext and exclude it from the final product
-
-        #need to learn how to bold in anki card
-        #if both not red and not black then green
-
-        # Replace the yellow pixels with white pixels
-
-
-        # Save the modified image
-        # open the image file using the PIL module
-
-        # display the result
-        #cv2.imshow('Result', img)
-        #cv2.waitKey(0)
-        #cv2.destroyAllWindows()
-        #text = pytesseract.image_to_string(img)
-        #print(text)

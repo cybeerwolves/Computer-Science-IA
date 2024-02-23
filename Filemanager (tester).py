@@ -7,7 +7,7 @@ from tkinter import filedialog
 from tkinter import messagebox as mb
 
 def open_window():
-    read=easygui.fileopenbox(default="C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCards",
+    read=easygui.fileopenbox(default="C:/Users/samue/OneDrive/Desktop/Ankify/SlideCards",
     filetypes=["*.pdf"])
     return read
 

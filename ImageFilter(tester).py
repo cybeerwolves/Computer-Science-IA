@@ -15,13 +15,18 @@ CardCounter = 0
 Colors = []
 
 def color_to_df(input):
-    
-    colors_pre_list = str(input).replace('([(','').split(', (')[0:-1]
-    df_rgb = [i.split('), ')[0] + ')' for i in colors_pre_list]
-    df_percent = [i.split('), ')[1].replace(')','') for i in colors_pre_list]
+    colors_pre_list = str(input).replace('([(','')
+    colors_pre_list = colors_pre_list.split(', (')[0:-1]
+
+    df_rgb = []
+    df_percent = []
+    for i in range(0, len(colors_pre_list) - 1):
+        df_rgb.append(colors_pre_list[i].split('), ')[0] + ')')
+        df_percent.append(colors_pre_list[i].split('), ')[1].replace(')',''))
+    #df_rgb = [i.split('), ')[0] + ')' for i in colors_pre_list]
+    #df_percent = [i.split('), ')[1].replace(')','') for i in colors_pre_list]
     #convert RGB to HEX code
     df = [df_rgb, df_percent]
-    print(df)
     return df
 
 def identify_color(r, g, b):
@@ -51,7 +56,7 @@ def identify_color(r, g, b):
             closest_color = name
     return closest_color
 
-CardPath = 'C:/Users/samue/OneDrive/Desktop/Code/IA for Computer Science/Computer-Science-IA/SlideCardsFiltered/card_1.jpg'
+CardPath = 'C:/Users/samue/OneDrive/Desktop/Ankify/SlideCardsFiltered/card_3.jpg'
 card = cv2.imread(CardPath)
 colors_x = extcolors.extract_from_path(CardPath, tolerance = 30, limit = 9)
 Color_D = color_to_df(colors_x)

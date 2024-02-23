@@ -1,0 +1,28 @@
+#separator:tab
+#html:false
+#deck column:1
+Market Failure	Asymmetric information	Asymmeifiric information refers to situations where buyers and sellers do not have equal access to information.
+Market Failure	Adverse selection	 refers to situations where one party in a transaction has more information about the quality of the product being sold than the other party.
+Market Failure	Moral hazard	 refers to situations where one party takes risks, but does not face the full costs of these risks because the full costs are borne
+Market Failure	Income inequality	 means that everyone in society receive the same amount of income.
+Market Failure	Aggregate demand	 is the total quantity of goods and services that all buyers in an economy want to purchase over a particular time period, at different prices, ceteris paribus.
+Market Failure	short run	In the , prices of resources (especially wages) are fixed.
+Market Failure	Stagnation	 is a prolonged period of slow economic growth usually accompanied by high unemployment.
+Market Failure	recessionary or inflationary gaps	Changes in aggregate supply do not lead to .
+Market Failure	LRAS curve	DP remains constant at the level of potential output (Ye) and the 
+Market Failure	Oligopolies	 is a state of limited competition, in which a market is shared by a
+Market Failure	Spore capacity	Spare capacity refers to physical capital (machines, equipment, etc) that firms have available but do not use.
+Market Failure	Moneiary policy	Monetary policy involves management of money supply and interest rate to achieve macroeconomic objectives.
+Market Failure	Interest rate	 is the cost of borrowing or reward for saving.
+Market Failure	PPP	 is the amount of a country’s currency that is needed to buy the same quantity of local goods and services that can be bought with USS$1 in the United States.
+Market Failure	Screening	 is a method used by the party with the limited information - i.e. the buyer.
+Market Failure	Signalling	 is a method used by the party that has more information to convince the buyers that the product being sold is of good quality. G
+Market Failure	LRAS	 shows the total quantity of goods and services produced in the flexible resource price period, a diferent price ave s, ceteris paribus.
+Market Failure	Real interest rate	 is the interest rate that has been corrected for inflation.
+Market Failure	nominal rate of interest	The  is the market rate that prevails at any moment in time.
+Market Failure	Economic development	 refers to a process that leads to improved standards of living for a population as a whole.
+Market Failure	Economic growth	 refers to increases in output and incomes over time, often measured on a per capita basis.
+Market Failure	leftward shift	A  means that AD decreases for any price level = i.e. fewer output is demanded
+Market Failure	rightward shift	A  means that AD increases for any price level - i.e. more output is demanded
+Market Failure	SRAS	 shows the relationship between the price level and the quantity of real output produced by firms when resource prices (especially wages) do not change, ceteris paribus.
+Market Failure	Aggregate supply	overs particular tne period at efferent price levels.

@@ -1,0 +1,6 @@
+#separator:tab
+#html:false
+#deck column:1
+Inflation	Asymmetric information	Asymmeifiric information refers to situations where buyers and sellers do not have equal access to information.
+Inflation	Adverse selection	 refers to situations where one party in a transaction has more information about the quality of the product being sold than the other party.
+Inflation	Screening	 is a method used by the party with the limited information - i.e. the buyer.

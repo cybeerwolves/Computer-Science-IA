@@ -1,0 +1,42 @@
+#separator:tab
+#html:false
+#deck column:1
+DEF	Markefffailure	Market failure refers to the failure of the market to allocate resources efficiently.
+DEF	Commonfpooifresources	Common pool resources are not owned by anyone, do not have a price and are available for anyone to use without payment or restrictions.
+DEF	tragedyfoffthefcommons	The tragedy of the commons is an economic problem in which every individual has an incentive to consume a resource at the expense of every other individual with no way to exclude anyone from consuming.
+DEF	Sustainability	 refers to the ability of something to be preserved and maintained over time.
+DEF	Fossilffuels	Fossil fuels are non-renewable resources as they take millions of years to form and accelerating overuse is leading to their rapid depletion.
+DEF	Taxation	 can be used where a per-unit tax on a good is imposed to reduce the supply.
+DEF	carbonftax	The carbon tax is a tax per unit of carbon emissions of fossil fuels.
+DEF	Asymmetricfinformation	Asymmeifiric information refers to situations where buyers and sellers do not have equal access to information.
+DEF	Tradeablefpermis	Tradeable permits are a policy involving permits to pollute issued to firms by a government or an international body.
+DEF	Collectivefselffgovernance	Collective self-governance refers to a solution to the use of common pool resources where the users take control of the resources and use them in a sustainable way.
+DEF	Demeritfgoods	Demerit goods are products where MSB < MPB upon consumption.
+DEF	shortfrun	In the short run, prices of resources (especially wages) are fixed.
+DEF	Adversefselection	Adverse selection refers to situations where one party in a transaction has more information about the quality of the product being sold than the other party.
+DEF	Stagnation	 is a prolonged period of slow economic growth usually accompanied by high unemployment.
+DEF	recessionaryforfinflationaryfgaps	Changes in aggregate supply do not lead to recessionary or inflationary gaps.
+DEF	LRASfcurve	DP remains constant at the level of potential output (Ye) and the LRAS curve
+DEF	Oligopolies	 is a state of limited competition, in which a market is shared by a
+DEF	Sporefcapacity	Spare capacity refers to physical capital (machines, equipment, etc) that firms have available but do not use.
+DEF	Moneiaryfpolicy	Monetary policy involves management of money supply and interest rate to achieve macroeconomic objectives.
+DEF	Interestfrate	Interest rate is the cost of borrowing or reward for saving.
+DEF	PPP	 is the amount of a country’s currency that is needed to buy the same quantity of local goods and services that can be bought with USS$1 in the United States.
+DEF	Screening	 is a method used by the party with the limited information - i.e. the buyer.
+DEF	Commonfpoolfresources	Common pool resources are not owned by anyone, do not have a price and are available for anyone to use without payment or restrictions.
+DEF	Aggregatefsupply	overs particular tne period at efferent price levels.
+DEF	leftwardfshift	A leftward shift means that SRAS decreases for any price level = i.e. lower quantity of real GDP.
+DEF	rightwardfshift	A rightward shift means that SRAS increases for any price level - i.e. larger quantity of real GDP.
+DEF	LRAS	 shows the total quantity of goods and services produced in the flexible resource price period, a diferent price ave s, ceteris paribus.
+DEF	Aggregatefdemand	Aggregate demand is the total quantity of goods and services that all buyers in an economy want to purchase over a particular time period, at different prices, ceteris paribus.
+DEF	MarginalfprivatefcostffMPCf	Marginal private cost (MPC) refer to the cost to producers of producing one more unit of a good.
+DEF	MarginalfprivatefbenefitffMPBf	Marginal private benefit (MPB) refer to benefits to consumers from consuming one more unit of a good or service.
+DEF	MarginalfsocialfcostffMSCf	Marginal social cost (MSC) refer to costs to society from consuming one more unit of a good.
+DEF	MarginalfsocialfbenefitffMSBf	Marginal social benefit (MSB) refer to benefits to society from consuming one more unit of a good.
+DEF	Realfinterestfrate	Real interest rate is the interest rate that has been corrected for inflation.
+DEF	nominalfratefoffinterest	The nominal rate of interest is the market rate that prevails at any moment in time.
+DEF	Economicfdevelopment	Economic development refers to a process that leads to improved standards of living for a population as a whole.
+DEF	Economicfgrowth	Economic growth refers to increases in output and incomes over time, often measured on a per capita basis.
+DEF	Externalities	 occur when the actions of consumers or producers give rise to negative or positive spillover effects on third parties.
+DEF	Marketffailure	Market failure refers to the failure of the market to allocate resources efficiently.
+DEF	SRAS	 shows the relationship between the price level and the quantity of real output produced by firms when resource prices (especially wages) do not change, ceteris paribus.

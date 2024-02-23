@@ -1,0 +1,13 @@
+#separator:tab
+#html:false
+#deck column:1
+gggggg	Demand-pull inflation	 involves an excess of aggregate demand over aggregate supply at the full employment level of output, and is caused by an increase in aggregate demand.
+gggggg	Cosi-push inflation	Cost-push inflation is caused by a fall in aggregate supply, in turn resulting from increases in wages or costs of inputs.
+gggggg	Purchasing power	 is the quantity of products that can be bought with money.
+gggggg	Hyperinflation	 occurs when the price level increases by more than 50% per month.
+gggggg	Philips curve	The  is concerned with the relationship between unemployment and inflation.
+gggggg	PPP	 is the amount of a country’s currency that is needed to buy the same quantity of local goods and services that can be bought with USS$1 in the United States.
+gggggg	Consumer Price Index (CPI)	 is a measure of the cost of living for the typical household, and compares the value of a basket of goods and services in one year with the value of the same basket in a base year.
+gggggg	weighted price index	A  isa price index that ‘weights’ the various goods and services according to their relative importance in consumer spending.
+gggggg	Deflation	 is defined as.a sustained decrease in the general price level.
+gggggg	Inflation	 is defined as a sustained increase in the general price level.

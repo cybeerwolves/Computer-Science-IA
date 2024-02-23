@@ -1,0 +1,6 @@
+#separator:tab
+#html:false
+#deck column:1
+fff	PPP	 is the amount of a country’s currency that is needed to buy the same quantity of local goods and services that can be bought with USS$1 in the United States.
+fff	Deflation	 is defined as.a sustained decrease in the general price level.
+fff	Inflation	 is defined as a sustained increase in the general price level.
